@@ -1,3 +1,5 @@
+
+
 *{
     margin: 0;
     padding: 0;
@@ -7,40 +9,43 @@
 h1{
     position: absolute;
     left: ;
-    top: 50px;
-    right: 530px;
+    top: 5vw;
+    right: 34vw;
     background-color: aqua;
-    font-size: 4rem;
+    font-size: 4vw;
 
 
 }
 
 body{
-    min-height: 100vh;
+    min-height: 50vh;
+    min-width: 100vw;
     background: #f8ff70;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .calculator{
     position: absolute;
-    top: 180px;
-    width: 300px;
-    height: 500px;
-    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.6);
-    border-radius: 12px;
+    top: 12.5vw;
+    width: 20vw;
+    height: 33vw;
+    box-shadow: 1vw 1vw 3vw rgba(0, 0, 0, 0.6);
+    border-radius: 1vw;
     background: #97ddf1;
     overflow: hidden;
 }
 
 form input{
     width: 100%;
-    height: 150px;
+    height: 9.5vw;
     border: none;
-    border-radius: 12px;
-    font-size: 2rem;
-    padding: 1rem;
+    border-radius: 0.7vw;
+    font-size: 3vw;
+    padding: 1vw;
     color: white;
     background: black;
     text-align: right;
@@ -48,14 +53,14 @@ form input{
 }
 
 button{
-    flex: 0 0 22%;
-    margin: 5px 0;
-    border: 1px solid black;
-    width: 60px;
-    height: 52px;
-    font-size: 22px;
+    flex: 0 0 4vw;
+    margin: 0.5vw 0;
+    border: 0.08vw solid black;
+    width: 60vw;
+    height: 3.3vw;
+    font-size: 1.5vw;
     font-weight: 600;
-    border-radius: 5px;
+    border-radius: 0.6vw;
     cursor: pointer;
 }
 
@@ -63,7 +68,7 @@ button{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 20px;
+    padding: 1vw;
 }
 
 .btn-yellow{
@@ -88,4 +93,81 @@ button{
     background: rgb(197, 61, 61);
     color: white;
 
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 700px) {
+
+    .calculator{
+        position: absolute;
+        top: 24vw;
+        right: ;
+        width: 80vw;
+        height: 120vw;
+        box-shadow: 1vw 1vw 3vw rgba(0, 0, 0, 0.6);
+        border-radius: 1vw;
+        background: #97ddf1;
+        overflow: hidden;
+    }
+
+    body{
+        
+        min-width: 100vw;
+        background: #f8ff70;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    form input{
+        width: 100%;
+        height: 35vw;
+        border: none;
+        border-radius: 0.7vw;
+        font-size: 15vw;
+        padding: 1vw;
+        color: white;
+        background: black;
+        text-align: right;
+        pointer-events: none;
+    }
+
+    button{
+        display: flex;
+        
+        margin: 1.4vw ;
+        border: 0.09vw solid black;
+        padding: 6.5vw 6vw;
+        height: 6vw;
+        font-size: 5vw;
+        font-weight: 600;
+        border-radius: 0.6vw;
+        cursor: pointer;
+        justify-content: center;
+        align-items:center;
+    }
+
+    .buttons{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 1vw;
+    }
+
+    h1{
+        display: flex;
+        
+        position: absolute;
+        left: ;
+        top: 7vw;
+        right: 11vw;
+        background-color: aqua;
+        font-size: 10vw;
+    
+    
+    }
+    
 }
