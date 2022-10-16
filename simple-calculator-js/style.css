@@ -114,6 +114,7 @@ button{
     body{
         
         min-width: 100vw;
+        min-height: 50vh;
         background: #f8ff70;
         display: flex;
         justify-content: center;
