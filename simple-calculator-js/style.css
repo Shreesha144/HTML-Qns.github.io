@@ -157,13 +157,13 @@ button{
         padding: 1vw;
     }
 
-    h1{
+   h1{
         display: flex;
         
-        position: absolute;
+        position: relative;
         left: ;
-        top: 7vw;
-        right: 2vw;
+        top: -45vw;
+        right: -0.7vw;
         background-color: aqua;
         font-size: 10vw;
     
